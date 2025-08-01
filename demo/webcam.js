@@ -84,7 +84,7 @@ function drawFaces(canvas, data, fps) {
     // Top label
     ctx.fillStyle = isAngry ? 'red' : 'black';
     if (isAngry) {
-      ctx.fillText('⚠️ Angry > 3s', box.x, box.y - 78);
+      ctx.fillText('⚠️ Angry > 2s', box.x, box.y - 78);
     }
 
     ctx.fillText(`gender: ${person.gender}`, box.x, box.y - 59);
