@@ -87,15 +87,15 @@ function drawFaces(canvas, data, fps) {
       ctx.fillText('⚠️ Angry > 2s', box.x, box.y - 78);
     }
 
-    ctx.fillText(`gender: ${person.gender}`, box.x, box.y - 59);
+    // ctx.fillText(`gender: ${person.gender}`, box.x, box.y - 59);
     ctx.fillText(`expression: ${Math.round(100 * expression[0][1])}% ${expression[0][0]}`, box.x, box.y - 41);
 
     // Shadow color label
     ctx.fillStyle = isAngry ? 'red' : 'blue';
-    ctx.fillText(`gender: ${person.gender}`, box.x, box.y - 60);
+    // ctx.fillText(`gender: ${person.gender}`, box.x, box.y - 60);
     ctx.fillText(`expression: ${Math.round(100 * expression[0][1])}% ${expression[0][0]}`, box.x, box.y - 42);
 
-    // Face landmarks
+    // Face landmarks                                                                                                                                                         
     ctx.globalAlpha = 0.8;
     ctx.fillStyle = 'lightblue';
     const pointSize = 2;
